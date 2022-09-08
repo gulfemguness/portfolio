@@ -1,0 +1,301 @@
+body {
+  padding: 0;
+  margin: 0%;
+}
+
+h2 {
+  margin-left: 150%;
+  }
+
+/* NAV */
+
+.nav {
+  display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+  background-color: rgb(25, 25, 25);
+}
+
+.left-container,
+.right-container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 300px;  
+  padding: 10px;
+  margin: 0;
+}
+
+.left-container {
+	justify-content: flex-start;
+}
+
+.right-container {
+	justify-content: flex-end;
+}
+
+.left-logo {
+  display: flex;
+  flex-basis: 300px;
+  font-size: 35px;
+}
+
+.right-links {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	flex-basis: 1000px;
+	align-items: center;
+	color: #fff; 
+}
+
+a {
+	text-decoration: none; /* makes under-lines disappear */
+	font-family: sans-serif;
+	color: hsla(0, 0%, 100%, 0.7);
+  margin: 5px;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a.active {
+  color: #fff;
+}
+
+
+/* HOME PAGE */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+  font-size: 30pt;
+  color:  rgb(25, 25, 25);
+}
+
+/* ABOUT */
+
+  .columnsAbout {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.side-col {
+  flex-basis: 30%;
+  padding: 20px;
+  background: rgb(248,255,232);
+}
+
+.main-col {
+  flex-basis: 70%;
+  background-color: #FFF;
+  padding: 20px;
+}
+
+/* GALLERY */
+
+img {
+  border-radius: 8px;
+  width: 500px;
+  height: auto;
+  
+} 
+
+/* CONTACT */
+
+.contact {
+  justify-content: space-evenly;
+  padding: 80px;
+  width: 30%;
+}
+
+.contact form {
+  flex-grow: .5;
+  padding: 10px;
+  margin-left: 150px; 
+  /* set the other column's margin-right + header to 150% */
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 25px;
+  font-size:1em;
+  color: #FFF;
+  background:rgb(25, 25, 25);
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+input[type="submit"]:active {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  color: rgb(12, 12, 12);
+  background: rgba(186, 186, 186, 0.663);
+}
+
+input,
+select,
+textarea {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  color: rgb(25, 25, 25);
+  background-color: rgba(217, 217, 217, 0.245);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+p.radio-format {
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+input[type="radio"] {
+  width: 10px;
+}
+
+.contact section {
+  flex-grow: .5;
+  padding: 10px;
+  margin-left: 150px; 
+}
+
+
+/* Try to take #greetings to left side */
+#greeting {
+font-size: 70pt;
+}
+
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  color: rgb(25, 25, 25);
+  opacity: 30%;
+  font-family: sans-serif;
+}
+
+
+/* -3rd Try- body {
+  height: 100%;
+  margin: 0%;
+}
+
+nav a.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  background-color: aqua;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  background-color: aqua;
+  
+
+}
+
+nav li {
+  margin: 7px;
+  color: white;
+} */
+
+
+
+/* -2nd Try- nav li {
+  display: inline-flex;
+  align-items: flex-end;
+  margin: 3px;
+  
+}
+
+nav ul {
+  background-color: gray;
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+  list-style-type: none;
+  
+}
+
+nav {
+  display: block;
+  color: white;
+} */
+
+
+/* NAV  -1st try-
+.nav {
+    overflow: hidden; / Hide overflow /
+    background-color: ; / Dark background color /
+  }
+
+.nav a.left{
+      float: left;
+  }
+
+.nav a{
+      float: right;
+      display: block;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+  }
+
+  */
+
+
+   /* .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+   } */
+
+   
+

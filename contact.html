@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Gulfem Acar's Portfolio">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <!--CSS linked -->
+    </head>
+
+    <body>
+
+<!-- NAV -->
+        <div class="nav"> 
+            <div class="container">
+                <div class="left-container">
+                    <ul class="left-logo">
+                        <li><a href="index.html">G.</a></li>
+                    </ul>
+                </div>
+
+                <div class="right-container">
+                    <ul class="right-links">
+                        <li><a href="index.html">HOME</a></li> 
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html" class="active" >CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+<!-- CONTACT -->
+            <main class="row contact">
+                <h2>CONTACT</h2>
+
+                <section>
+                    <p id="greeting">Let's Get in Touch!</p>
+                </section> 
+
+                <form name="contact_form" id="contact_form" method="post" action="submit.html" class="subform" novalidate>
+                    <!-- 	POST - sends the form-data as an HTTP post transaction -->
+
+                    <p>
+                        <label for="name">Name:*</label>
+                        <input class="required" title="Please enter your name" type="text" name="name" id="name" autofocus>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:*</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+
+                    <p class="radio-format err-msg">
+                        If you heard Believe by Cher playing, would you get up and dance?
+                        <br>
+                        <label>
+                            <input type= "radio" title="please select an option" name="positive"
+                                value="love">
+                            Oh Yeah!
+                        </label>
+                        <label>
+                            <input type="radio" name="negative" value="nope">
+                            Nope!
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <label for="comments">Message:*</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </p>
+                    
+                    <p>
+                        <input type="submit" value="SUBMIT">
+                    </p>
+                    <small>*Required field</small>
+                </form>
+
+
+
+            </main>
+
+
+        
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p> &copy; 2022 Gulfem G. Acar</p>
+        </div>
+        <!-- make footer in the bottom -->
+
+        
+
+    </body>
+
+
+</html>
